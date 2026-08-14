@@ -155,6 +155,19 @@ The Reverse Alert Node continuously reads the HC-SR05 ultrasonic sensor.
 
 If an obstacle is detected within the configured limit:
 
+HC-SR05 Distance > Limit
+           ↓
+       Logic 0
+           ↓
+      CAN Message
+           ↓
+       Main Node
+           ↓
+   Safety Alert OFF
+
+
+## System Flow
+
                     START
                       │
                       ▼
