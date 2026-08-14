@@ -199,8 +199,19 @@ HC-SR05 Distance > Limit
        Indicator Node           │
              │                  ▼
              ▼              Main Node
-       LED Indicator            │
+     LED Indicator            │
                                 ▼
                            Safety Alert
 
 
+
+## 🚗 Applications
+
+This system can be used as a prototype for:
+
+Automotive safety systems,
+Vehicle indicator control,
+Reverse parking assistance,
+Engine temperature monitoring,
+CAN-based automotive networks,
+Vehicle monitoring systems
