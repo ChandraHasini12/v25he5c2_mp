@@ -215,3 +215,16 @@ This system can be used as a prototype for:
 4. Engine temperature monitoring 
 5. CAN-based automotive networks 
 6. Vehicle monitoring systems
+
+## 📌 Future Enhancements
+
+Possible future improvements include:
+
+1. Add vehicle speed monitoring
+2. Add battery voltage monitoring
+3. Add GPS-based vehicle tracking
+4. Add GSM/IoT connectivity
+5.Store sensor data for analysis
+6. Add CAN error monitoring
+7. Add more automotive sensor nodes
+8. Add real-time data logging
