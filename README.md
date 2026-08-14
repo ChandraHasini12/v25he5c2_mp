@@ -32,14 +32,14 @@ To design and develop an automotive safety and monitoring system using the **CAN
 
 
 ## 🔧 Hardware Requirements
-LPC2129 Microcontroller,
-CAN Transceiver – MCP2551,
-LEDs,
-LCD,
-HC-SR05 Ultrasonic Sensor,
-Switches,
-DS18B20 Temperature Sensor,
-USB-to-UART Converter.
+1.LPC2129 Microcontroller
+2.CAN Transceiver – MCP2551
+3.LEDs
+4.LCD
+5.HC-SR05 Ultrasonic Sensor
+6.Switches
+7.DS18B20 Temperature Sensor
+8.USB-to-UART Converter
 
 ## 💻 Software Requirements
 Embedded C,
@@ -64,8 +64,8 @@ The Reverse Alert Node sends obstacle detection information to the Main Node.
 
 ## CAN ID Specifications:
 
-## MAIN_ID 0x100
-## IND_ID  0x200
+## MAIN_ID          0x100
+## IND_ID           0x200
 ## MODE_ID(Reverse) 0x300 
 
 
