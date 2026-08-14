@@ -32,7 +32,7 @@ To design and develop an automotive safety and monitoring system using the **CAN
 
 
 ## 🔧 Hardware Requirements
-if 1. LPC2129 Microcontroller
+1. LPC2129 Microcontroller
 2. CAN Transceiver – MCP2551
 3. LEDs
 4. LCD
