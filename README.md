@@ -69,6 +69,8 @@ The Reverse Alert Node sends obstacle detection information to the Main Node.
 ## MODE_ID(Reverse) 0x300 
 
 
+
+
 ##  🧩 Block Diagram
 
                     ┌──────────────────────┐
