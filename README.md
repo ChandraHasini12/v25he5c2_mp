@@ -30,15 +30,37 @@ To design and develop an automotive safety and monitoring system using the **CAN
 
 ---
 
-## Hardware Components
 
-LPC2129, 
-Switches, 
-Ultrasonic Sensor, 
-DS18B20 Temperature Sensor, 
-CAN Bus, 
-LED's, 
-LCD 
+## 🔧 Hardware Requirements
+LPC2129 Microcontroller,
+CAN Transceiver – MCP2551,
+LEDs,
+LCD,
+HC-SR05 Ultrasonic Sensor,
+Switches,
+DS18B20 Temperature Sensor,
+USB-to-UART Converter.
+
+## 💻 Software Requirements
+Embedded C
+Keil C Compiler
+Flash Magic
+
+## 📡 CAN Communication
+
+CAN is used for communication between the Main Node, Indicator Node, and Reverse Alert Node.
+
+             CAN BUS
+                │
+       ┌────────┼────────┐
+       │        │        │
+       ▼        ▼        ▼
+   Main Node  Indicator  Reverse
+              Node       Alert Node
+
+The Main Node communicates indicator commands to the Indicator Node.
+
+The Reverse Alert Node sends obstacle detection information to the Main Node.
 
 
 ## 🏗️ System Architecture
@@ -116,4 +138,3 @@ HC-SR05 Distance < Limit
        Main Node
            ↓
    Safety Alert ON
-
