@@ -38,7 +38,7 @@ Ultrasonic Sensor,
 DS18B20 Temperature Sensor, 
 CAN Bus, 
 LED's, 
-LCD, 
+LCD 
 
 
 ## 🏗️ System Architecture
