@@ -1,4 +1,4 @@
-# CAN-Based Vehicle Safety & Monitoring System
+## 🚗CAN-Based Vehicle Safety & Monitoring System
 
 ## 📌 Project Overview
 
@@ -205,7 +205,7 @@ HC-SR05 Distance > Limit
 
 
 
-## 🚗 Applications
+##  Applications
 
 This system can be used as a prototype for:
 
