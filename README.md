@@ -165,3 +165,42 @@ HC-SR05 Distance < Limit
        Main Node
            ↓
    Safety Alert ON
+
+
+
+## System flow
+
+                    START
+                      │
+                      ▼
+              Initialize LPC2129
+                      │
+                      ▼
+              Initialize CAN/LCD
+                      │
+                      ▼
+             Read Engine Temperature
+                      │
+                      ▼
+                 Display LCD
+                      │
+                      ▼
+              Check Operating Mode
+                 /          \
+                /            \
+          FORWARD            REVERSE
+             │                  │
+             ▼                  ▼
+      Check Switches       Read HC-SR05
+             │                  │
+             ▼                  ▼
+      CAN Indicator         Compare Distance
+        Command                 │
+             │                  ▼
+             ▼             Send CAN Data
+       Indicator Node           │
+             │                  ▼
+             ▼              Main Node
+       LED Indicator            │
+                                ▼
+                           Safety Alert
