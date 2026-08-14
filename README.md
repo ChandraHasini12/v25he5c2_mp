@@ -204,3 +204,5 @@ HC-SR05 Distance < Limit
        LED Indicator            │
                                 ▼
                            Safety Alert
+
+
