@@ -1,0 +1,107 @@
+# CAN-Based Vehicle Safety & Monitoring System
+
+## 📌 Project Overview
+
+The **CAN-Based Vehicle Safety & Monitoring System** is an automotive embedded system designed using the **Controller Area Network (CAN) protocol**.
+
+The system uses multiple LPC2129-based nodes to monitor vehicle parameters and provide safety-related alerts.
+
+The main node monitors the engine temperature, controls vehicle indicators, and processes reverse sensor information. Communication between the nodes is performed using the CAN protocol.
+
+---
+
+## 🎯 Aim
+
+To design and develop an automotive safety and monitoring system using the **CAN protocol**, where a central/main node monitors engine temperature, controls vehicle indicators, and processes reverse sensor data to provide real-time safety alerts through coordinated communication with multiple nodes.
+
+---
+
+## ✨ Features
+
+- Engine temperature monitoring
+- Vehicle indicator control
+- Reverse obstacle detection
+- CAN-based communication between multiple nodes
+- LCD-based information display
+- External interrupt-based indicator control
+- Forward and reverse operating modes
+- Reverse safety alert using ultrasonic sensor
+- LED/buzzer-based safety indication
+
+---
+
+## 🏗️ System Architecture
+
+The project consists of three major nodes:
+
+### 1. Main Node
+
+The Main Node acts as the central controller.
+
+Functions:
+
+- Reads engine temperature using the **DS18B20 temperature sensor**
+- Displays temperature on LCD
+- Detects external switch interrupts
+- Sends indicator control commands through CAN
+- Selects forward/reverse operating mode
+- Receives reverse-alert information through CAN
+- Activates an alert using LED/buzzer when required
+
+### 2. Indicator Node
+
+The Indicator Node continuously waits for CAN data from the Main Node.
+
+Functions:
+
+- Receives indicator control information through CAN
+- Processes the received CAN data
+- Controls left/right indicator LEDs according to the received command
+
+### 3. Reverse Alert Node
+
+The Reverse Alert Node continuously monitors the distance using the **HC-SR05 ultrasonic sensor**.
+
+Functions:
+
+- Measures distance from an obstacle
+- Compares the measured distance with a predefined limit
+- Sends `Logic 1` to the Main Node when the distance is below the limit
+- Sends `Logic 0` when the distance is above the limit
+
+---
+
+## 🔄 Working Principle
+
+### Forward Mode
+
+Initially, the vehicle operates in **Forward Mode**.
+
+The Main Node:
+
+1. Reads engine temperature.
+2. Displays the temperature on LCD.
+3. Monitors external switches.
+4. Generates an interrupt when an indicator switch is pressed.
+5. Sends the appropriate indicator command through CAN.
+6. The Indicator Node receives the CAN message.
+7. The corresponding indicator LED is activated.
+
+### Reverse Mode
+
+When the mode switch is pressed, the system changes from Forward Mode to **Reverse Mode**.
+
+The Reverse Alert Node continuously reads the HC-SR05 ultrasonic sensor.
+
+If an obstacle is detected within the configured limit:
+
+```text
+HC-SR05 Distance < Limit
+           ↓
+       Logic 1
+           ↓
+      CAN Message
+           ↓
+       Main Node
+           ↓
+   Safety Alert ON
