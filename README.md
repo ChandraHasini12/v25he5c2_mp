@@ -210,8 +210,8 @@ HC-SR05 Distance > Limit
 This system can be used as a prototype for:
 
 Automotive safety systems \
-Vehicle indicator control,
-Reverse parking assistance,
-Engine temperature monitoring,
-CAN-based automotive networks,
+Vehicle indicator control \
+Reverse parking assistance \
+Engine temperature monitoring \
+CAN-based automotive networks \
 Vehicle monitoring systems
