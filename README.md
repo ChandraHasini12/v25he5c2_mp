@@ -32,13 +32,13 @@ To design and develop an automotive safety and monitoring system using the **CAN
 
 ## Hardware Components
 
-LPC2129
-Switches
-Ultrasonic Sensor
-DS18B20 Temperature Sensor
-CAN Bus
-LED's
-LCD
+LPC2129, 
+Switches, 
+Ultrasonic Sensor, 
+DS18B20 Temperature Sensor, 
+CAN Bus, 
+LED's, 
+LCD, 
 
 
 ## 🏗️ System Architecture
