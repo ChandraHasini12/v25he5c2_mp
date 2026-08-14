@@ -215,3 +215,16 @@ Reverse parking assistance,
 Engine temperature monitoring,
 CAN-based automotive networks,
 Vehicle monitoring systems
+
+## 📌 Future Enhancements
+
+Possible future improvements include:
+
+-Add vehicle speed monitoring
+-Add battery voltage monitoring
+-Add GPS-based vehicle tracking
+-Add GSM/IoT connectivity
+-Store sensor data for analysis
+-Add CAN error monitoring
+-Add more automotive sensor nodes
+-Add real-time data logging
