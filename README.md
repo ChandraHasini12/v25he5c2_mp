@@ -42,9 +42,9 @@ DS18B20 Temperature Sensor,
 USB-to-UART Converter.
 
 ## 💻 Software Requirements
-Embedded C
-Keil C Compiler
-Flash Magic
+Embedded C,
+Keil C Compiler,
+Flash Magic.
 
 ## 📡 CAN Communication
 
