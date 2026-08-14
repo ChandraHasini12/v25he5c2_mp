@@ -62,7 +62,7 @@ The Main Node communicates indicator commands to the Indicator Node.
 
 The Reverse Alert Node sends obstacle detection information to the Main Node.
 
-## CAN ID's for Nodes:
+## CAN ID's for Nodes
 
 ## MAIN_ID          0x100
 ## IND_ID           0x200
